@@ -1,9 +1,9 @@
 //
-//  GNAppDelegate.h
+//  GNViewController.h
 //  WheelComponent
 //
 //  Copyright (c) 2012 Ahmed Ragab
-//  
+//
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,13 +24,8 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "GNWheelView.h"
 
-@class GNWheelViewController;
-
-@interface GNAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-@property (strong, nonatomic) GNWheelViewController *viewController;
+@interface GNWheelViewController : UIViewController <GNWheelViewDelegate>
 
 @end
